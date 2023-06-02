@@ -5,5 +5,10 @@ jobs:
     printTest:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Test"
+            - name: Echo Secret
+              with: 
+                secret: ${{ secrets.SECRET }}
+              env: 
+                secret: ${{ secrets.SuperSecret }}
+              run: echo secret
     
