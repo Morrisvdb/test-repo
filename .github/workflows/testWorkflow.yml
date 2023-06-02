@@ -21,8 +21,4 @@ jobs:
               env:
                 TOKEN: ${{ secrets.SECRET }}
               run: python test.py
-            - shell: bash
-              env:
-                SECRET: ${{ secrets.SECRET }}
-              run:
-                python test.py
+              
