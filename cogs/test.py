@@ -6,11 +6,10 @@ class Test(commands.Cog):
 	
 	@commands.Cog.listener()
 	async def on_ready(self):
-		# an example event with cogs
-	
+		print("Ready Boss!")
 	@commands.command()
 	async def command(self, ctx):
-		# an example command with cogs
+		await ctx.respond("Command")
 
 def setup(client):
 	client.add_cog(Test(client))
