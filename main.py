@@ -5,8 +5,8 @@ import os
 DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 client = commands.Bot(command_prefix = "!", intents=discord.Intents.all())
 
-for f in os.listdir("./cogs"):
-	if f.endswith(".py"):
-		client.load_extension("cogs." + f[:-3])
+@client.slash_command(name="test", guild_ids=[977513866097479760, 1047234879743611034])
+async def test(ctx, arg):
+	await ctx.respond(arg)
 
 client.run(DISCORD_TOKEN)
