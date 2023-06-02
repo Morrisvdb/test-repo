@@ -16,3 +16,7 @@ jobs:
         echo "$SECRET"
       env:
         SECRET: ${{ secrets.SECTET }}
+
+    - name: print
+      run:
+        print "Hello There"
