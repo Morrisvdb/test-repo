@@ -20,5 +20,5 @@ jobs:
             - name: start bot
               env:
                 SECRET: ${{ secrets.SECRET }}
-              run: python test.py
+              run: python main.py
               
