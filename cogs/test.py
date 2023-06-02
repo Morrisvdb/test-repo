@@ -7,7 +7,8 @@ class Test(commands.Cog):
 	@commands.Cog.listener()
 	async def on_ready(self):
 		print("Ready Boss!")
-	@commands.command()
+
+	@commands.command(name="command", guild_ids=[977513866097479760, 1047234879743611034])
 	async def command(self, ctx):
 		await ctx.respond("Command")
 
