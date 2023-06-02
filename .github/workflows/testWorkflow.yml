@@ -19,6 +19,6 @@ jobs:
 #                 pip install -r requirements.txt
             - name: start bot
               env:
-                TOKEN: ${{ secrets.SECRET }}
+                SECRET: ${{ secrets.SECRET }}
               run: python test.py
               
