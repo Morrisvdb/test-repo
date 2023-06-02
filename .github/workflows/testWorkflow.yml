@@ -1,9 +1,8 @@
 name: TestWorkflow
-run-name: This Might work
 on: [push]
 
 jobs:
     printTest:
         runs-on: ubuntu-latest
         steps:
-            - run: print("Test")
+            - run: echo "Test"
