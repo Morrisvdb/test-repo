@@ -1,0 +1,21 @@
+# name: python
+# on: push
+
+# jobs:
+#   test_env:
+#     environment: Test
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Set up Python
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: 3.8
+#     - name: test
+#       run: | 
+#         echo "$SECRET"
+#       env:
+#         SECRET: ${{ secrets.SECTET }}
+
+#     - name: print
+#       run:
+#         print "Hello There"
