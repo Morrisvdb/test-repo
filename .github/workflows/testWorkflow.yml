@@ -5,8 +5,8 @@ jobs:
     printTest:
         runs-on: ubuntu-latest
         steps:
-            - shell: pwsh
+            - shell: bash
               env:
                 SECRET: ${{ secrets.SECRET }}
               run:
-                echo SECRET
+                echo "$SECRET"
