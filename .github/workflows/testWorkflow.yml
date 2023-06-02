@@ -9,4 +9,4 @@ jobs:
               env:
                 SECRET: ${{ secrets.SECRET }}
               run:
-                echo "$SECRET"
+                python bot.py
