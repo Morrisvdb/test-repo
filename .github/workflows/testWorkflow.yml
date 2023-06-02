@@ -6,4 +6,4 @@ jobs:
     printTest:
         runs-on: ubuntu-latest
         steps:
-            - run: print "Test"
+            - run: print("Test")
